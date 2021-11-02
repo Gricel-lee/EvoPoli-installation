@@ -2,7 +2,7 @@
 Here it is described the process to install EvoPoli in Eclipse IDE, a tool that supports synthesis of Pareto-optimal policies for MDPs with arbitrary combinations of constraints and optimisation objectives.  https://eprints.whiterose.ac.uk/178508/1/MDPPolicySynthesis_ASE2021.pdf 
 
 
-# Installation
+## Installation
  - Dowload and unzip the source code from: https://github.com/gerasimou/MDPSynthesis
  - Open Eclipse in a desire workingspace
  - Go to File Menu> Import > Maven > Existing Maven Projects and click next
@@ -33,11 +33,39 @@ The error for the Evochecker library should have dissapeared.
 ![image](https://user-images.githubusercontent.com/63869574/139842070-4f8da4b6-2c83-4f2d-9a10-ed97a1185b96.png)
 
 - Go to https://automata.tools/hoa/jhoafparser/ and download the jhoafparser-xxx.jar
+![image](https://user-images.githubusercontent.com/63869574/139846429-decb724d-6930-49ca-bf04-24a37fa1fa45.png)
+
+- Repeate the process (as for Evochecker) to install the new artifact.
+![image](https://user-images.githubusercontent.com/63869574/139846811-050b99ac-fd04-4a95-8c74-913fccc515a5.png)
+
+In this case, I changed later the version in the pom.xml to match the .jar version "1.1.1"
+![image](https://user-images.githubusercontent.com/63869574/139846965-16c9a65c-3f58-42dc-819d-fc0cfe4b18f7.png)
+Save the new pom.xml, and refresh.*
+
+Now there are three errors missing:
+![image](https://user-images.githubusercontent.com/63869574/139847319-4c6bf53b-255b-49f9-b703-555b6e1514b8.png)
+
+- Go to https://sourceforge.net/projects/lpsolve/files/lpsolve/5.0.10.0/ (FYI, mentionated in https://www.prismmodelchecker.org/papers/fmsd-csgs.pdf) and download lpsolve 
+and download: lp_solve_5.0_java.zip
+![image](https://user-images.githubusercontent.com/63869574/139855126-82110408-92f2-4c66-9592-15e0d6dd8790.png)
+
+- Repeat process (as for Evochecker) to install the new artifact.
+![image](https://user-images.githubusercontent.com/63869574/139855509-e1f75f84-62ea-4226-ba78-434df3e113e2.png)
+Change to the downloaded version:
+![image](https://user-images.githubusercontent.com/63869574/139855600-b1d02d40-f707-4f5c-806d-d9152cde8fa4.png)
+Save the new pom.xml, and refresh.*
+The pom.xml file should not have more errors.
+
+## 
+
+Error related to importing these libraries may exist:
+![image](https://user-images.githubusercontent.com/63869574/139873599-17544c00-5542-412f-8402-385ac44b404d.png)
 
 
-- 
 
 
+## Notes
+* Sometimes Eclipse may require to Clean the project (Project > Clean) or to restart Eclipse to consider changes.
 
 
 - Go to Run> Run Configurations> Double click Maven Build. In the new configuration, in "Base dicrectory" select the Maven Project.
