@@ -15,6 +15,30 @@ Here it is described the process to install EvoPoli in Eclipse IDE, a tool that 
 - When finish importing, must probably the next Errors will appear:
 ![image](https://user-images.githubusercontent.com/63869574/139692068-6daca272-9493-4f89-870a-f9717e2328af.png)
 
+- Right click on the project folder > Import. Under Maven select:
+![image](https://user-images.githubusercontent.com/63869574/139838441-929001cf-7789-4e1a-b63f-9c0eea70e591.png)
+
+In "Artifact file", browse for the EvoChecker-1.1.0.jar that comes in the unzipped folder. In my case: /home/evochecker/Downloads/MDPSynthesis-master/EvoChecker-1.1.0.jar
+Complete the group ID, artefact ID and version as it appears on the pom.xl file, and the rest as shown here:
+
+![image](https://user-images.githubusercontent.com/63869574/139839694-c51da31d-783c-491a-a21e-f4941093caf9.png)
+
+- Right click on the project folder again and press Refresh (F5)
+![image](https://user-images.githubusercontent.com/63869574/139841260-7c797075-df73-4983-bdfe-a054c7aefb80.png)
+
+The error for the Evochecker library should have dissapeared.
+![image](https://user-images.githubusercontent.com/63869574/139841361-06918bbb-28d1-450a-8f7c-523a5224b71e.png)
+
+- Extract Evochecker in the project folder
+![image](https://user-images.githubusercontent.com/63869574/139842070-4f8da4b6-2c83-4f2d-9a10-ed97a1185b96.png)
+
+- Go to https://automata.tools/hoa/jhoafparser/ and download the jhoafparser-xxx.jar
+
+
+- 
+
+
+
 
 - Go to Run> Run Configurations> Double click Maven Build. In the new configuration, in "Base dicrectory" select the Maven Project.
 ![image](https://user-images.githubusercontent.com/63869574/139694266-b37e02df-1d01-4c43-a08c-c1de91a41454.png)
