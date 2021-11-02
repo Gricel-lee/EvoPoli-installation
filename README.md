@@ -19,8 +19,19 @@ Here it is described the process to install EvoPoli in Eclipse IDE, a tool that 
 - Go to Run> Run Configurations> Double click Maven Build. In the new configuration, in "Base dicrectory" select the Maven Project.
 ![image](https://user-images.githubusercontent.com/63869574/139694266-b37e02df-1d01-4c43-a08c-c1de91a41454.png)
 
--  
--    > Environment tab> New
+- In the Environment tab> Add (for linux):
+![image](https://user-images.githubusercontent.com/63869574/139694660-3d695f9c-7d82-4450-9e86-d5778599358f.png)
+ or OSX: DYLD_LIBRARY_PATH = libs/runtime for Mac iOS.
+ Apply and close.
+
+- In the pom.xml, we can see that there are dependencies that are not uploaded yet:
+![image](https://user-images.githubusercontent.com/63869574/139695456-447a95a2-5dba-4e2b-84a1-b7b065018c0a.png)
+Hence, right click on the project folder > Maven > Add Dependency
+![image](https://user-images.githubusercontent.com/63869574/139695662-d787d954-bc20-46f4-bbcf-3812593290a1.png)
+
+
+
+- 
 
 
 - Right click on the Project in the File's tree > Build Path > Configure Build Path
